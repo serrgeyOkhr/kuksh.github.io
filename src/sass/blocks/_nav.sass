@@ -1,0 +1,83 @@
+.nav
+    &_burger
+        span
+            @media (max-width:500px)
+                height: 10px
+                width: 45px
+            height: 15px
+            width: 65px
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            border-radius: 50px
+            right: 11%
+            background-color: #2f2f2e
+            &:before
+                content: ''
+                @media (max-width:500px)
+                    height: 10px
+                    width: 45px
+                height: 15px
+                width: 65px     
+                position: absolute
+                transform: translateY(150%)
+                border-radius: 50px
+                right: 0%
+                background-color: #2f2f2e
+            &:after
+                content: ''
+                @media (max-width:500px)
+                    height: 10px
+                    width: 45px
+                height: 15px
+                width: 65px     
+                position: absolute
+                transform: translateY(-150%)
+                border-radius: 50px
+                right: 0%
+                background-color: #2f2f2e
+    &_sec_burger
+        &:before
+            content: ''
+            position: absolute
+            @media (max-width:500px)
+                width: 30px
+                height: 30px
+                border: 7px solid #2f2f2e
+            width: 50px
+            height: 50px
+            background-color: transporent
+            border: 12px solid #2f2f2e
+            left: 11%
+            top: 50%
+            border-radius: 50px
+            transform: translateY(-50%)
+
+
+
+.nav
+    display: flex
+    justify-content: space-between
+    padding-top: 50px
+    @media (max-width:500px)    
+        padding-top: 20px
+    &_btn
+        @media (max-width:500px)
+            height: 74px
+            width: 140px
+        height: 120px
+        width: 220px
+        border: 1px solid rgba(255,255,255, 0.5)
+        border-radius: 100px
+        // border-image: linear-gradient(90deg, #ffffff,  rgba(0, 0, 0, 0)) 1
+        background-color: transparent
+    &_burger
+        position: relative
+        transform: translateX(-50%)
+        +nav_shadow
+    &_sec_burger
+        position: relative
+        transform: translateX(50%)
+        +nav_shadow
+
+  

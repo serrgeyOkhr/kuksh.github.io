@@ -1,0 +1,80 @@
+@import "reset"
+@import "color"
+
+@import "font"
+
+@import "blocks/header"
+@import "blocks/what_i_do"
+@import "blocks/block-content"
+@import "blocks/graffiti"
+@import "blocks/design"
+@import "blocks/digital"
+@import "blocks/paint"
+@import "blocks/form"
+@import "blocks/nav"
+@import "blocks/footer"
+@import "blocks/menu"
+
+@import "pages/identika/header"
+
+
+.button
+    background: linear-gradient(270deg, #808080 0%, #d1d1d1 100%)
+    border: none
+    border-radius: 50px
+    font-size: 24px
+    text-decoration: none
+    color: #000000
+    z-index: 10
+    @media (max-width:768px) 
+        padding: 15px 35px
+        padding-top: 12px
+        font-size: 20px
+    @media (max-width:500px) 
+        padding: 8px 35px
+        padding-top: 12px
+        font-size: 100%
+    padding: 15px 50px
+    font-weight: 300
+    box-shadow: -6px 4px 5px 0px rgba(15, 0, 20, 0.17)
+
+img
+    max-width: 100%
+
+       
+.shell
+    display: none
+    @media (max-width:500px) 
+        display: block
+        position: absolute
+        width: 100%
+        height: 430px  
+        border: 1px solid rgba(255, 255, 255, 0.7)
+        box-shadow: 0px 0px 12px 7.86px rgba(0, 0, 0, 0.1)
+        background-image: linear-gradient( -83deg, rgba(230,210,192,0.98039) 0%, rgba(197,171,146,0) 100%)
+        transform: skew(20deg) rotate(20deg) translateY(0%)
+        &_sec
+            transform: skew(20deg) rotate(20deg) translateY(-108%)
+
+.shell_first
+    display: block
+    position: absolute
+    width: 100%
+    height: 20%
+    @media (max-width:768px)
+        height: 17%
+    left: 0
+    border: 1px solid rgba(255, 255, 255, 0.7)
+    background-image: linear-gradient( 83deg, rgba(230,210,192,0.98039) 0%, rgba(197,171,146,0.8) 100%)
+    @media (max-width:500px)
+        display: none
+
+.container
+    align-self: center
+    width: 950px
+    @media (max-width:950px)
+        width: 728px
+    @media (max-width:768px)
+        width: 500px
+    @media (max-width:500px)
+        width: 100%

@@ -1,0 +1,71 @@
+.digital
+    overflow: hidden
+    position: relative
+    &_img
+        width: 50%
+        position: relative
+        display: block
+        margin-left: auto
+        margin-top: -60px
+        transform: translateY(-20%)
+    &_block
+        width: 60%
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: $main
+        &_title
+            font-size: 60px
+            text-transform: uppercase
+            margin-bottom: 15px
+            @media (max-width:950px)
+                font-size: 50px
+                margin-top: 100px
+            @media (max-width:768px)
+                font-size: 44px
+                margin-top: 60px
+            margin-top: 80px
+        &_list
+            margin-bottom: 50px
+            li
+                +font
+                @media (max-width:950px)
+                    font-size: 32px
+                @media (max-width:768px)
+                    font-size: 26px
+                font-size: 45px                 
+@media (max-width:500px)       
+    .digital
+        position: relative
+        &_img
+            width: 50%
+            position: relative
+            display: block
+            margin-left: auto
+            margin-top: -70px
+            transform: translateY(-15%)
+        &_block
+            @media (max-width:330px)
+                width: 50%
+            width: 60%
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            color: $main
+            &_title
+                @media (max-width:330px)
+                    font-size: 24px
+                font-size: 29px
+                text-transform: uppercase
+                margin-bottom: 5px
+                margin-top: 100px
+            &_list
+                margin-bottom: 50px
+                li
+                    +font
+                    font-size: 22px
+                    line-height: 25px

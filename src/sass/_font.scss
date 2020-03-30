@@ -1,0 +1,14 @@
+body{
+    font-family: Arial;
+}
+
+@font-face {
+    font-family: 'Gabriola';
+    src: url('../fonts/11053.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font {
+    font-family: 'Gabriola', sans-serif;
+}

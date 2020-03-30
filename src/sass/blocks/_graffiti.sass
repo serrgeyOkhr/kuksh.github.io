@@ -1,0 +1,78 @@
+.graffiti
+    overflow: hidden
+    position: relative
+
+    img
+        width: 45%
+        position: relative
+        display: block
+        margin-left: auto
+        transform: translateY(-20%)
+    &_block
+        width: 50%
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        right: 0%
+        transform: translateX(30%)
+        color: $main
+        &_title
+            @media (max-width:950px)
+                font-size: 50px
+            font-size: 60px
+            text-transform: uppercase
+            margin-bottom: 15px
+            @media (max-width:950px)
+                margin-top: 101px
+            @media (max-width:768px)
+                margin-top: 81px
+            margin-top: 121px
+        &_list
+            padding-bottom: 40px
+            li
+                +font
+                @media (max-width:950px)
+                    font-size: 32px
+                @media (max-width:768px)
+                    font-size: 26px
+                font-size: 45px
+
+          
+@media (max-width:500px)       
+    .graffiti
+        background: rgb(186,158,129)
+        background: linear-gradient(90deg, rgba(187,158,130,1) 0%, rgba(226,207,188,1) 100%)
+        overflow: hidden
+        position: relative
+
+        img
+            width: 45%
+            position: relative
+            display: block
+            margin-left: auto
+            transform: translateY(-20%)
+        &_block
+            width: 50%
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            right: 0%
+            transform: translateX(30%)
+            color: $main
+            &_title
+                font-size: 29px
+                text-transform: uppercase
+                margin-bottom: 15px
+                margin-top: 41px
+            &_list
+                padding-bottom: 40px
+                li
+                    +font
+                    font-size: 22px
+                    line-height: 25px
+            &_button
+          

@@ -1,0 +1,53 @@
+.paint
+    position: relative
+    &_img
+        width: 45%
+        position: relative
+        display: block
+        margin-top: -260px
+        transform: translateY(-20%)
+    &_block
+        width: 50%
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        margin-left: auto
+        color: $main
+        &_title
+            @media (max-width:950px)
+                font-size: 50px
+                margin-top: 101px
+            font-size: 60px
+            text-transform: uppercase
+            padding-bottom: 125px
+            @media (max-width:768px)
+                margin-top: 81px
+            margin-top: 121px
+
+          
+@media (max-width:500px)       
+    .paint
+        position: relative
+        &_img
+            width: 45%
+            position: relative
+            display: block
+            margin-top: -160px
+            transform: translateY(-20%)
+        &_block
+            width: 50%
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            margin-left: auto
+            color: $main
+            &_title
+                margin-top: 0
+                font-size: 29px
+                text-transform: uppercase
+                margin-bottom: 55px
+                padding-bottom: 0

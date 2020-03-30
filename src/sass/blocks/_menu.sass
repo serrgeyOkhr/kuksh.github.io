@@ -1,0 +1,112 @@
+.menu
+    height: 100vh
+    width: 100%
+    z-index: 10
+    +gradient
+    position: fixed
+    top: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &_display
+        display: none
+    button
+        position: absolute
+        top: 15%
+        @media (max-width:500px)
+            top: 10%
+        right: 0
+        +light-gradient
+        +nav_shadow
+        border: 1px solid rgba(255,255,255,0.3)
+        border-radius: 50px
+        font-size: 24px
+        transform: translateX(50%)
+        padding: 10px 120px 10px 30px
+        font-weight: 300
+        img
+            @media (max-width:500px)
+                max-width: 70%
+            max-width: 100%
+    &_trigon
+        height: 20%
+        img
+            max-height: 100%
+
+    &_content
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        height: 100vh
+        &_port
+            line-height: 1.1
+            font-size: 35px
+            @media (max-width:425px)
+                font-size: 26px
+
+            li
+                &:first-child
+                    @media (max-width:768px)
+                        font-size: 46px
+                        margin-bottom: 35px
+                    @media (max-width:425px)
+                        font-size: 40px
+                        margin-bottom: 20px
+                    font-size: 50px
+                    font-weight: 700
+                    margin-bottom: 55px
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    &:before
+                        content: ""
+                        width: 20px
+                        height: 20px
+                        background-color: #000
+                        border-radius: 50px
+                        align-self: center
+                        position: absolute
+                        left: 0
+                        transform: translateX(-30px)
+            a
+                text-decoration: none
+                color: black
+        &_doc
+            font-size: 35px
+            line-height: 1.1
+            @media (max-width:425px)
+                font-size: 26px
+            li
+                &:first-child
+                    @media (max-width:768px)
+                        font-size: 46px
+                        margin-top: 35px
+                        margin-bottom: 35px
+                    @media (max-width:425px)
+                        font-size: 40px
+                        margin-top: 20px
+                        margin-bottom: 20px
+                    margin-top: 55px
+                    margin-bottom: 55px
+                    font-size: 50px
+                    font-weight: 700
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    &:before
+                        content: ""
+                        width: 20px
+                        height: 20px
+                        background-color: #000
+                        border-radius: 50px
+                        align-self: center
+                        position: absolute
+                        left: 0
+                        transform: translateX(-30px)
+            a
+                text-decoration: none
+                color: black
+        
+        
