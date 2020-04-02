@@ -15,7 +15,9 @@
 @import "blocks/footer"
 @import "blocks/menu"
 
-@import "pages/identika/header"
+@import "pages/header"
+@import "pages/identika/style"
+@import "pages/graffiti/style"
 
 
 .button
@@ -76,5 +78,95 @@ img
         width: 728px
     @media (max-width:768px)
         width: 500px
+    @media (max-width:500px)
+        width: 100%
+
+.nav_block
+    overflow: hidden
+    margin-top: -100px
+    position: sticky
+    top: 20px
+    z-index: 10
+    @media (max-width:768px)
+        margin-top: -60px
+    width: 100%
+    height: 180px    
+.sec-nav
+    display: flex
+    justify-content: space-between
+    @media (max-width:500px)    
+        margin-top: 0
+        padding-top: 20px
+    &_btn
+        height: 120px
+        width: 220px
+        border: 1px solid rgba(255,255,255, 0.5)
+        border-radius: 100px
+        background-color: transparent
+        @media (max-width:500px)
+            height: 74px
+            width: 140px
+    &_burger
+        position: relative
+        text-align: right
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        transform: translateX(-50%)
+        +nav_shadow
+        img
+            transform: rotate(180deg) translateX(50%)
+            @media (max-width:500px)
+                height: 40px
+    &_sec_burger
+        position: relative
+        transform: translateX(50%)
+        +nav_shadow
+        span
+            height: 15px
+            width: 65px
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            border-radius: 50px
+            left: 11%
+            background-color: #2f2f2e
+            @media (max-width:500px)
+                height: 10px
+                width: 45px
+            &:before
+                content: ''
+                height: 15px
+                width: 65px     
+                position: absolute
+                transform: translateY(150%)
+                border-radius: 50px
+                left: 0%
+                background-color: #2f2f2e
+                @media (max-width:500px)
+                    height: 10px
+                    width: 45px
+            &:after
+                content: ''
+                height: 15px
+                width: 65px     
+                position: absolute
+                transform: translateY(-150%)
+                border-radius: 50px
+                left: 0%
+                background-color: #2f2f2e
+                @media (max-width:500px)
+                    height: 10px
+                    width: 45px
+
+.sec-wrap
+    width: 955px
+    margin: 0 auto
+    @media (max-width:1200px)
+        width: 728px
+    @media (max-width:950px)
+        width: 600px
+    @media (max-width:768px)
+        width: 550px
     @media (max-width:500px)
         width: 100%

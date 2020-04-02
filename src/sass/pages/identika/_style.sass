@@ -1,0 +1,34 @@
+body
+    display: flex
+    flex-direction: column
+    overflow-x: hidden
+    +gradient
+
+.idn-header
+    z-index: -1
+    img
+        z-index: -1
+
+.idn
+    &-sliders
+        margin-bottom: 150px
+    &-slider
+        position: relative
+        &_title
+            position: absolute
+            bottom: 0
+            left: 0
+            font-size: 40px
+            color: #ffffff
+            background-color: rgba(0,0,0,0.4)
+            padding: 30px 200px 60px 30px
+            @media (max-width:1024px)
+                padding: 20px 160px 40px 20px
+            @media (max-width:768px) 
+                padding: 10px 80px 20px 10px
+                font-size: 24px
+            @media (max-width:500px)
+                font-size: 20px 
+
+
+  
