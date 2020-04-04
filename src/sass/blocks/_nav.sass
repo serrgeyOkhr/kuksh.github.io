@@ -1,4 +1,15 @@
 .nav
+    &_section
+        position: sticky
+        top: 20px
+        overflow: hidden
+        padding-top: 20px
+        margin-bottom: -20px
+        height: 180px
+        z-index: 100
+        @media (max-width:500px)
+            height: 140px
+            top: 0px
     &_burger
         span
             @media (max-width:500px)
@@ -58,7 +69,6 @@
 .nav
     display: flex
     justify-content: space-between
-    padding-top: 50px
     @media (max-width:500px)    
         padding-top: 20px
     &_btn
